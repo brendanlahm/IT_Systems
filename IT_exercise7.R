@@ -11,7 +11,7 @@ plot(x,y,type="l")
 
 ### Plotting a sin function for Task 1b
 x <- seq(0.2*pi,length.out=12)
-y <- 4/pi*((sin(x)+sin(3*x)/3)+(sin(5*x)/5)+(sin(7*x)/7)+(sin(9*x)/9))
+y <- 4/pi*(sin(x)+sin(3*x)/3+sin(5*x)/5+sin(7*x)/7+sin(9*x)/9)
 plot(x,y,type="l")
 
 ### Natural Log

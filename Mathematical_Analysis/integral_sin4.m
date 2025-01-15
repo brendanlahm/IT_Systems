@@ -1,7 +1,3 @@
-% Integral
-
-y = myIntegrand(x)
-
 % Compute integral of sin^4(x)
 xmin = 0;
 xmax = 2*pi;
@@ -12,5 +8,5 @@ function y = myIntegrand(x)
     y = sin(x).^4;
 end
 
-
+y = myIntegrand(x)
 

@@ -1,7 +1,12 @@
 % Bisection Search
 
+%function y = f(x)
+%    y = x^2-2;
+%    disp(y)
+%end
+
 function y = f(x)
-    y = x^2-2;
+    y = -exp(-x)+x;
     disp(y)
 end
 
@@ -20,7 +25,7 @@ function [a,b] = bisection(i)
     disp("f(c):")
     disp(f(c))
     tol = 0.01;
-    maxit = 4;
+    maxit = 6;
 
     if f(a)*f(b) >= 0
         disp("Method Not Applicable")
@@ -47,8 +52,12 @@ function [a,b] = bisection(i)
             a = c;
             disp("New a:")
             disp(a)
+            disp("b remains:")
+            disp(b)
         else 
             b = c;
+            disp("a remains:")
+            disp(a)
             disp("New b:")
             disp(b)
         end
@@ -57,6 +66,7 @@ function [a,b] = bisection(i)
         disp(c)
         i = i+1;
     end
+    disp("Method Failed (increase maxit)")
 end
 
 [a,b] = bisection(i)

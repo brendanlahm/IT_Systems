@@ -8,5 +8,6 @@ function y = myIntegrand(x)
     y = sin(x).^4;
 end
 
+fplot(@myIntegrand) % Plot sin^4(x)
 y = myIntegrand(x)
 

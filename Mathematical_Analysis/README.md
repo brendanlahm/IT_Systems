@@ -10,4 +10,4 @@
 -------------------------------------------------------------------------------------------------------------
 ![alt text](https://github.com/brendanlahm/IT_Systems/blob/main/Mathematical_Analysis/Archimedean_Spiral.png)
 
-### **Figure:** Archimedean Spiral
+### Figure: Archimedean Spiral

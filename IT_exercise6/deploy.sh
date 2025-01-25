@@ -9,16 +9,17 @@ if [ -d "./$1" ]; then
   exit 0
 fi
 
-echo "Scaffolding for $1"
-echo "Create project '$1'"
+echo "Scaffolding for '$1'"
+echo "Creating project '$1'"
 
 mkdir $1
 cd ./$1
 
 for i in $(seq 1 $3)
 do
-  echo "Create folder ./$1/sub$i"
+  echo "Creating folder ./$1/sub$i"
   mkdir sub$i
+  echo "Copying file to ./$1/sub$i"
   cp ../$2 ./sub$i
 done
 

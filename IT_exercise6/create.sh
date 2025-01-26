@@ -9,14 +9,14 @@ if [ -d "./$1" ]; then
 fi
 
 echo "Scaffolding for $1"
-echo "Create project '$1'"
+echo "Creating project '$1'"
 
 mkdir $1
 cd ./$1
 
 for i in etc dist docs script src classes libs 
 do
-  echo "Create folder ./$1/$i"
+  echo "Creating folder ./$1/$i"
   mkdir $i
 done
 
@@ -24,8 +24,12 @@ cd ./src
 
 for i in main test
 do
-  echo "Create folder ./$i"
+  echo "Creating folder ./$1/src/$i"
   mkdir $i
+  cd ./$i
+  echo "Creating files"
+  touch file1.txt && touch file2.txt
+  cd ../
 done
 
 cd ../../
